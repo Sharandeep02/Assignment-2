@@ -7,8 +7,8 @@ This contains a driver class which uses concurrent threads to generate and send 
 - The event_producer class has '__init__' method that initializes the object for the weburl parameter.This URL acts as endpoints where all these events will be sent.
 - The EventProducer class is defined with an __init__ method and two other methods: generate_event and send_event.
  “*”The  generate._event method which will generate the events of the users like "access_app", "click_banner", "view_products", "select_product", "add_to_cart","place_order" with a unique user_id and returns the events in json format and each event contains user_id,event_type and timestamp.
--The sent_event method which will send the events to specified URL using request.post function.
--The logging module is used to log the events and errors to a file.
+- The sent_event method which will send the events to specified URL using request.post function.
+- The logging module is used to log the events and errors to a file.
 
 2.webhook and memory queue:
 This code represents simple Flaskapi that receives incoming events through a webhook and pushes them to an in-memory queue using Redis. 
