@@ -64,14 +64,14 @@ update redis_host,redis_port,redis_db,redis_queue
 update  host=" ",user=" ",password=" ",database=" " in read_data.py file
 
 
-Getting Started
+4.Getting Started
 To start the project, run the following command:
 
-first run - webhook.py file this file runs the flask api which we created.And this accepts the payload.
+i.first run - webhook.py file this file runs the flask api which we created.And this accepts the payload.
 
-Next run event_producer.py this python file will generate the events and send it to the flask api
+ii.Next run event_producer.py this python file will generate the events and send it to the flask api
 
-Next run read_data.py this python file will  read data from redis queue and inserting the JSON data into MySQL database.
+iii.Next run read_data.py this python file will  read data from redis queue and inserting the JSON data into MySQL database.
 
 
 
