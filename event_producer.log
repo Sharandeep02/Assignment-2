@@ -1,0 +1,70 @@
+INFO:event_producer_agent::	generated event {'user_id': 0, 'event_type': 'select_product', 'timestamp': '2023-07-13 18:33:57.061267'}
+INFO:event_producer_agent::	generated event {'user_id': 1, 'event_type': 'access_app', 'timestamp': '2023-07-13 18:33:57.061538'}
+INFO:event_producer_agent::	generated event {'user_id': 2, 'event_type': 'click_banner', 'timestamp': '2023-07-13 18:33:57.061811'}
+INFO:event_producer_agent::	generated event {'user_id': 3, 'event_type': 'select_product', 'timestamp': '2023-07-13 18:33:57.062038'}
+INFO:event_producer_agent::	generated event {'user_id': 4, 'event_type': 'access_app', 'timestamp': '2023-07-13 18:33:57.062252'}
+INFO:event_producer_agent::	generated event {'user_id': 5, 'event_type': 'place_order', 'timestamp': '2023-07-13 18:33:57.062477'}
+INFO:event_producer_agent::	generated event {'user_id': 6, 'event_type': 'view_products', 'timestamp': '2023-07-13 18:33:57.062684'}
+INFO:event_producer_agent::	generated event {'user_id': 7, 'event_type': 'click_banner', 'timestamp': '2023-07-13 18:33:57.063006'}
+INFO:event_producer_agent::	generated event {'user_id': 8, 'event_type': 'access_app', 'timestamp': '2023-07-13 18:33:57.063230'}
+INFO:event_producer_agent::	generated event {'user_id': 9, 'event_type': 'click_banner', 'timestamp': '2023-07-13 18:33:57.063414'}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:8888
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+INFO:event_producer_agent::200
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+INFO:event_producer_agent::200
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+INFO:event_producer_agent::<Response [200]>
+INFO:event_producer_agent::200
+INFO:event_producer_agent::<Response [200]>
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+INFO:event_producer_agent::200
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+INFO:event_producer_agent::200
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::<Response [200]>
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::200
+INFO:event_producer_agent::<Response [200]>
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+DEBUG:urllib3.connectionpool:http://localhost:8888 "POST /webhook HTTP/1.1" 200 26
+INFO:event_producer_agent::<Response [200]>
+INFO:event_producer_agent::200
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::<Response [200]>
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::200
+INFO:event_producer_agent::<Response [200]>
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::<Response [200]>
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::200
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::200
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::<Response [200]>
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::<Response [200]>
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
+INFO:event_producer_agent::----- successfully generated and posted the event for user -----
