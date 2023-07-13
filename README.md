@@ -6,11 +6,11 @@ This code represents an event producer that generates events and sends them to a
 This contains a driver class which uses concurrent threads to generate and send events for multiple users.
 - The event_producer class has '__init__' method that initializes the object for the weburl parameter.This URL acts as endpoints where all these events will be sent.
 - The EventProducer class is defined with an __init__ method and two other methods: generate_event and send_event.
- “*”The  generate._event method which will generate the events of the users like "access_app", "click_banner", "view_products", "select_product", "add_to_cart","place_order" with a unique user_id and returns the events in json format and each event contains user_id,event_type and timestamp.
+- The  generate._event method which will generate the events of the users like "access_app", "click_banner", "view_products", "select_product", "add_to_cart","place_order" with a unique user_id and returns the events in json format and each event contains user_id,event_type and timestamp.
 - The sent_event method which will send the events to specified URL using request.post function.
 - The logging module is used to log the events and errors to a file.
 
-2.webhook and memory queue:
+2.Webhook and Memory queue:
 This code represents simple Flaskapi that receives incoming events through a webhook and pushes them to an in-memory queue using Redis.
 
 - An instance of the flask application is created with the name app.
@@ -62,6 +62,8 @@ pip install -r requirements.txt
 
 update redis_host,redis_port,redis_db,redis_queue 
 update  host=" ",user=" ",password=" ",database=" " in read_data.py file
+
+redis-server (to start redis)
 
 
 4.Getting Started
