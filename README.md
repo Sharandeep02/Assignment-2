@@ -11,25 +11,25 @@ This contains a driver class which uses concurrent threads to generate and send 
 - The logging module is used to log the events and errors to a file.
 
 2.webhook and memory queue:
-This code represents simple Flaskapi that receives incoming events through a webhook and pushes them to an in-memory queue using Redis. 
--An instance of the flask application is created with the name app.
+This code represents simple Flaskapi that receives incoming events through a webhook and pushes them to an in-memory queue using Redis.
 
--A connection to redis is established using redis.Redis().
--The '/webhook' route is denfined and it expects a incoming post request.When a request is received the event data is extracted from the JOSN data payload and passed it through the push_to_queue() function.
--The push_to_queue function takes an event parameter and is responsible for pushing the event to the Redis queue. It configures the connection details, including the host, port, and database of the Redis server.
--Within in this function a retry mechanism is implemented to handle potential failuers while pushing the event to the queue.
--It uses a while loop and retries the operation a maximum number of times (max_retry_attempts). If an exception is raised during the push operation, the function waits for a specified duration (retry_delay_seconds) before retrying. If the maximum number of retries is reached, an error message is printed.
--In the main section the Flask application is set to run on 'localhost' with port '8888'.
+- An instance of the flask application is created with the name app.
+- A connection to redis is established using redis.Redis().
+- The '/webhook' route is denfined and it expects a incoming post request.When a request is received the event data is extracted from the JOSN data payload and passed it through the push_to_queue() function.
+- The push_to_queue function takes an event parameter and is responsible for pushing the event to the Redis queue. It configures the connection details, including the host, port, and database of the Redis server.
+- Within in this function a retry mechanism is implemented to handle potential failuers while pushing the event to the queue.
+- It uses a while loop and retries the operation a maximum number of times (max_retry_attempts). If an exception is raised during the push operation, the function waits for a specified duration (retry_delay_seconds) before retrying. If the maximum number of retries is reached, an error message is printed.
+- In the main section the Flask application is set to run on 'localhost' with port '8888'.
 
 3.Queue consumer and Database:
 This code reads data from redis queue and inserting the JSON data into MySQL database.
 
--Redis connection details are defined, including the host, port, database, and queue name.
--The read_data_from_queue function establishes a connection to Redis using the provided connection details.It retrives all the data drom the redis queue using lrange command.If data doesn't exists in the queue it will return None.
--The insert_json_data function takes JSON data as input and inserts it into a MySQL database. It establishes a connection to the MySQL server using the provided connection details like host,user,password,database name.
--It creates a SQL query to insert the data into the event_details table and executes the query using a cursor.The connection is committed to persist the changes.
--In the main section, the read_data_from_queue function is called to retrieve data from the Redis queue. If data exists, it is printed; otherwise, a message indicating an empty queue is printed.
--Each record in the retrieved data is decoded, converted to a dictionary using json.loads, and passed to the insert_json_data function for insertion into the MySQL database.
+- Redis connection details are defined, including the host, port, database, and queue name.
+- The read_data_from_queue function establishes a connection to Redis using the provided connection details.It retrives all the data drom the redis queue using lrange command.If data doesn't exists in the queue it will return None.
+- The insert_json_data function takes JSON data as input and inserts it into a MySQL database. It establishes a connection to the MySQL server using the provided connection details like host,user,password,database name.
+- It creates a SQL query to insert the data into the event_details table and executes the query using a cursor.The connection is committed to persist the changes.
+- In the main section, the read_data_from_queue function is called to retrieve data from the Redis queue. If data exists, it is printed; otherwise, a message indicating an empty queue is printed.
+- Each record in the retrieved data is decoded, converted to a dictionary using json.loads, and passed to the insert_json_data function for insertion into the MySQL database.
 
 
 
@@ -37,10 +37,10 @@ This code reads data from redis queue and inserting the JSON data into MySQL dat
 
 - [Installation](#installation)
 - Before using this project, ensure that you have the following prerequisites:
-Python 3.7 or higher
-Pip package manager
-Redis
-MySQL workbench
+- Python 3.7 or higher
+- Pip package manager
+- Redis
+- MySQL workbench
 
 
 
